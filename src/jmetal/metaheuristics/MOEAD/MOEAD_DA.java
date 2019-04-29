@@ -206,11 +206,9 @@ public class MOEAD_DA extends Algorithm {
         if(child.getOverallConstraintViolation()==0) {
         	offspring_pop.add(child);
         }
-        if(TrialFlag==1) {
-        	updateProblem2(child, n, type, epsilon);
+	updateProblem2(child, n, type, epsilon);
+        if(TrialFlag==1) {// keep a temporary archive in DA procedure
         	updateProblem3(child, n, type);
-        }else {
-        	updateProblem2(child, n, type, epsilon);
         }
       }// for
       gen++;
@@ -812,21 +810,6 @@ public class MOEAD_DA extends Algorithm {
 	      }
 	    }
 	} // updateProblem
-//  void updateProblem3(Solution indiv, int id, int type) {
-//	  //find the most suitable subproblem for this solution
-//	  int min_idx=-1;
-//	  double min_f=1.0e+30;
-//	  for(int k=0;k<populationSize_;k++) {
-//	      double f2 = d2(indiv, lambda_[k]);
-//	      if(f2<min_f) {
-//	    	  min_idx=k;
-//	    	  min_f=f2;
-//	      }
-//	  }
-//	  if(Math.abs(indiv.getOverallConstraintViolation())<Math.abs(population_around.get(min_idx).getOverallConstraintViolation())) {
-//		  
-//	  }
-//	} // updateProblem
   void updateProblem(Solution indiv, int id, int type) {
 	    // indiv: child solution
 	    // id:   the id of current subproblem
