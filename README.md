@@ -1,7 +1,7 @@
 MOEA/D-DA-Project
 ===================
 
-This is the source code for the paper titled "A Constrained Multiobjective Evolutionary Framework with Diversity Augment Strategy".
+This is the source code for the paper titled "A Constrained Multiobjective Evolutionary Algorithm with Detect-and-Escape Strategy".
 
 Usage
 -------------------
