@@ -1,4 +1,4 @@
-MOEA/D-DA-Project
+MOEA/D-DAE-Project
 ===================
 
 This is the source code for the paper titled "A Constrained Multiobjective Evolutionary Algorithm with Detect-and-Escape Strategy".
